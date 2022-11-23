@@ -4,32 +4,22 @@ using UnityEngine;
 
 public class Cube : MonoBehaviour
 {
-    private float _MovementSpeed;
-    void Start()
+
+public static class KeyboardInput
+{
+    public static float GetHorizontalDirection()
     {
-        
+        return Input.GetAxisRaw("Horizontal");
     }
 
-    // Update is called once per frame
-    void Update()
+    public static float GetVerticalDirection()
     {
-        if (Input.GetKey(KeyCode.D))
-            moveToDirectionWithSpeed(Vector3.right);
-        else if (Input.GetKey(KeyCode.A))
-            moveToDirectionWithSpeed(Vector3.left);
-        if (Input.GetKey(KeyCode.W))
-            moveToDirectionWithSpeed(Vector3.forward);
-        else if (Input.GetKey(KeyCode.S))
-            moveToDirectionWithSpeed(Vector3.back);
-        if(Input.GetKey(KeyCode.Space))
-            moveToDirectionWithSpeed(Vector3.up);
-        else if (Input.GetKey(KeyCode.LeftControl))
-            moveToDirectionWithSpeed(Vector3.down);
+        return Input.GetAxisRaw("Vertical");
+    }
 
-    }
-    private void moveToDirectionWithSpeed(Vector3 direction)
+    public static bool IsJumpPressed()
     {
-        float normalSpeed = _MovementSpeed * Time.deltaTime;
-        transform.position += direction * normalSpeed;
+        return Input.GetKeyDown(KeyCode.Space);
     }
+}
 }

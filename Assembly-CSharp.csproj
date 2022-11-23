@@ -56,12 +56,10 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Skrips\IMovement.cs" />
+    <Compile Include="Assets\Skrips\Teleport\TeleportExit.cs" />
     <Compile Include="Assets\Skrips\Cube.cs" />
     <Compile Include="Assets\Skrips\Move.cs" />
     <Compile Include="Assets\Skrips\CameraFollow.cs" />
-    <Compile Include="Assets\Skrips\Teleport\TeleportIn.cs" />
-    <Compile Include="Assets\Skrips\Teleport\TeleportOut.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

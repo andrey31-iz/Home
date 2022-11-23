@@ -342,10 +342,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Skrips/CameraFollow.cs"
 "Assets/Skrips/Cube.cs"
-"Assets/Skrips/IMovement.cs"
 "Assets/Skrips/Move.cs"
-"Assets/Skrips/Teleport/TeleportIn.cs"
-"Assets/Skrips/Teleport/TeleportOut.cs"
+"Assets/Skrips/Teleport/TeleportExit.cs"
 -langversion:9.0
 
 /deterministic
